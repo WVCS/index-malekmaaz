@@ -12,6 +12,7 @@ p {
 
 body {
   background-color: #F1FFFA;
+  font-family: "Poppins", sans-serif;
 }
 
 img { 
@@ -27,4 +28,31 @@ img:hover {
   border: black dotted 3px;
   height: 350px;
   background-color: #CCFCCB;
+}
+
+
+
+nav {
+  list-style-type:none;
+  position: fixed;
+  width:100%;
+  background-color: #9EFFF7;
+  left: 0;
+  top: 0;
+}
+
+li {
+  display: inline;
+  float: right;
+  padding: 10px
+    
+}
+a {
+  text-decoration: none;
+  color: #393D3F
+}
+
+li:hover {
+  background-color: white;
+  opacity: 50%
 }
