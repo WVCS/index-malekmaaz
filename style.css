@@ -26,10 +26,9 @@ p:hover {
 }
 
 img:hover {
-  border: black solid 10px;
+  border: #77A09D solid 10px;
   height: 350px;
-  background-color: #36625E;
-  opacity:25%
+  opacity:100%
 }
 
 
