@@ -1,13 +1,14 @@
 h1 {
   text-align: center;
   color:#464E47;
-  font-family: "Lucida Console", "Courier New",;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
 }
 
 p {
   text-align: center;
-  color: #568259;
-  text-decoration: underline;
+  color: #77A09D;
+
 }
 
 body {
@@ -20,11 +21,12 @@ img {
   margin-left: auto;
   margin-right: auto;}
 
-
+p:hover {
+  color: #36625E;
 }
 
 img:hover {
-  border: black dotted 3px;
+  border: black solid 10px;
   height: 350px;
   background-color: #36625E;
   opacity:25%
