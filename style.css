@@ -12,7 +12,7 @@ p {
 }
 
 body {
-  background-color: #E0FFFC;
+  background-color: #F4FFFE;
   font-family: "Poppins", sans-serif;
 }
 
@@ -37,7 +37,7 @@ nav {
   list-style-type:none;
   position: fixed;
   width:100%;
-  background-color: #CDFFFA;
+  background-color: #CEF0EC;
   left: 0;
   top: 0;
 }
