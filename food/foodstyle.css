@@ -3,6 +3,7 @@ font-family: 'Lemon/Milk', sans-serif;
 font-family: 'Lemon/Milk light', sans-serif;
   background-color: #FFFFFF;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 
@@ -60,6 +61,8 @@ width: 130px;
   "G H";
   grid-row-gap: 0;
   grid-column-gap: 0;
+  width: 100vw;
+  margin-left: -8px;
 }
 
 .Header {
