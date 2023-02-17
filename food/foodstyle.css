@@ -1,0 +1,180 @@
+body {
+  font-family: "Lemon/Milk", sans-serif;
+  font-family: "Lemon/Milk light", sans-serif;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+nav {
+  list-style-type: none;
+  position: fixed;
+  width: 100%;
+  background-color: #ffffff;
+  left: 0;
+  top: 0;
+  font-family: "Lemon/Milk", sans-serif;
+  z-index: 999;
+}
+
+li {
+  display: inline;
+  float: right;
+  padding: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+li:hover {
+  background-color: white;
+  opacity: 50%;
+}
+
+h1 {
+  font-family: "Kontemporary", sans-serif;
+  font-size: 15px;
+}
+
+h2 {
+  font-family: "Kontemporary", sans-serif;
+  font-size: 12vh;
+}
+
+img {
+  float: left;
+  width: 130px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template:
+    "A B C" auto
+    "D E F"
+    "G H";
+  grid-row-gap: 0;
+  grid-column-gap: 0;
+  width: 100;
+  margin-left: -8px;
+}
+
+.Header {
+  grid-column: 1 / 4;
+  font-family: "Kontemporary", sans-serif;
+  font-size: 300%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("https://static.outsider.com/uploads/2021/07/nashville-hot-chicken-joint-opens-california-with-waiver-warning-spiciest-chicken-level.jpg");
+  color: white;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  left: 0;
+}
+
+.B {
+  grid-column: 1 / 4;
+  font-family: "Kontemporary", sans-serif;
+  font-size: 400%;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background: black;
+  z-index: 900;
+}
+
+.C {
+  grid-column: 1 / 4;
+  font-family: "Kontemporary", sans-serif;
+  font-size: 10px;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  background: white;
+}
+
+.D {
+  grid-area: 4 / 1 / 4 / 1;
+}
+
+.E {
+  grid-area: 4 / 3;
+}
+
+.G {
+  grid-area: 6;
+}
+
+.H {
+  grid-area: 6 / 2 / 6 / 4;
+}
+
+.applytoday {
+  width: 350px;
+}
+
+.taste {
+  width: 500px;
+}
+
+.D,
+.E {
+  font-family: "Kontemporary", sans-serif;
+  font-size: 10px;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  background: white;
+  height: 200px;
+}
+
+.combos {
+  width: 700px;
+}
+
+.F {
+  grid-column: 4 / 1;
+  font-family: "Kontemporary", sans-serif;
+  font-size: 60px;
+  color: black;
+  text-align: center;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 100px;
+  background: white;
+    margin-left: 16px;
+}
+
+.mac {
+  width: 400px;
+}
+
+.G {
+  background-color: white;
+  margin-left: 16px;
+}
+
+.H {
+  font-family: "Kontemporary", sans-serif;
+  font-size: 40px;
+  color: black;
+  text-align: center;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 100px;
+  background: white;
+}
