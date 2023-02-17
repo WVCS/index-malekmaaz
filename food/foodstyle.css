@@ -3,6 +3,7 @@ body {
   font-family: "Lemon/Milk light", sans-serif;
   background-color: #ffffff;
   overflow-x: hidden;
+  width:100%;
 }
 
 nav {
