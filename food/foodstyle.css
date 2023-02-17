@@ -55,7 +55,7 @@ img {
     "G H";
   grid-row-gap: 0;
   grid-column-gap: 0;
-  width: 100;
+  width: 100%;
   margin-left: -8px;
 }
 
