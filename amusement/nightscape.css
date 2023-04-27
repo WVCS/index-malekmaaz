@@ -1,0 +1,250 @@
+body {
+  font-family: 'Tarrget', sans-serif;
+  background-color: black;
+}
+
+.title {
+  color: white;
+  font-size: 80px;
+
+}
+
+
+.Top {
+  position: relative;
+  margin-top: 92px;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.Top::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(https://cdnb.artstation.com/p/assets/images/images/014/665/033/original/yargon-kerman-webp-net-gifmaker-39.gif?1544919451) no-repeat center center fixed;
+  background-size: cover;
+  opacity: 0.60;
+  z-index: -1;
+}
+
+
+
+
+nav {
+  list-style-type: none;
+  position: fixed;
+  width: 100%;
+  background-color: #000000;
+  left: 0;
+  top: 0;
+  font-family: "Hemi Head", sans-serif;
+  z-index: 999;
+}
+
+.nav2 {
+  display: none;
+}
+
+.logo {
+  top: 2px;
+  left: 20px;
+  position: absolute;
+  height: 90px;
+}
+
+li {
+  display: inline;
+  float: right;
+  padding: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 27px;
+}
+
+a:hover {
+  background-color: black;
+  opacity: 75%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.ridesize {
+    width: 300px;
+}
+
+.pad {
+  padding: 1%;
+}
+
+h2 {
+  color: white;
+  font-family: "Hemi Head", sans-serif;
+}
+
+.header {
+  color: white;
+  font-family: "Hemi Head", sans-serif;
+  font-size: 40px;
+}
+
+.lotcontainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* TABLE CODE */
+
+td {
+text-align:center;
+padding: 3%;
+/* decrease the padding to make more space for the content */
+}
+
+th, td {
+border-style: none;
+color: #000000;
+width: 30%; /* increase the width of the table cells */
+}
+
+.fullwidth {
+width: 100%; /* set the table width to 100% */
+}
+
+.halfwidth {
+width: 50%; /* set the table width to 100% */
+}
+
+tr:nth-child(even) {
+  background-color: #FFFFFF;
+    opacity:100%
+}
+tr:nth-child(odd) {
+  background-color: #FFFFFF;
+  opacity:100%
+}
+
+tr:hover {
+  background-color: #ffffff;
+  opacity: 80%
+}
+
+table, th, td {
+  border-collapse: collapse;
+}
+
+.tabletext {
+  color: black;
+}
+
+
+@media (max-width: 1300px) {
+  .nav1 {
+    display: none;
+  }
+
+  .nav2 {
+    display: inline;
+  }
+}
+
+
+@media (max-width: 1000px) {
+    .container {
+display: initial;
+}
+  
+  .lotcontainer {
+    display: initial;
+  }
+td {
+text-align:center;
+padding: 3%;
+/* decrease the padding to make more space for the content */
+}
+
+th, td {
+border-style: none;
+color: #000000;
+width: 30%; /* increase the width of the table cells */
+}
+
+.fullwidth {
+width: 60%; /* set the table width to 100% */
+}
+}
+
+@media (max-width: 680px) {
+.title {
+  font-size: 40px;
+}
+}
+
+button {
+  background-color: black;
+  color: white;
+  padding: 1%;
+  border: solid rgba(255, 255, 255, 0.5) 3px;
+  font-family: "Hemi Head", sans-serif;
+  transition: border-color 0.2s ease-in-out;
+}
+
+button:hover {
+  cursor: pointer;
+  border-color: rgba(255, 255, 255, 0.75);
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  color: white;
+  background-color: black;
+  font-family: "Hemi Head", sans-serif;
+}
+
+input[type="text"]:focus {
+  border: 3px solid rgba(255, 255, 255, 0.75);
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  border: solid rgba(255, 255, 255, 0.5) 3px;
+  padding: 16px 32px;
+  margin: 4px 2px;
+  cursor: pointer;
+  color: white;
+  background-color: black;
+  font-family: "Hemi Head", sans-serif;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  background-color: original-color; /* Replace 'original-color' with the original background color */
+  -webkit-transition: border-color 0.5s; /* Update transition property to target border-color */
+  transition: border-color 0.5s; /* Update transition property to target border-color */
+  margin-top: -30px;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  border: solid rgba(255, 255, 255, 0.75) 3px; /* Update border color and other properties on hover */
+}
