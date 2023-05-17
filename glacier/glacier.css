@@ -1,0 +1,345 @@
+.Top {
+  background-color: #000000;
+  background: url(
+https://drive.google.com/uc?export=download&id=1mWYrsbrVSY7FlEYtBWXsWW7Qg7dSG-4K)
+    no-repeat center center fixed;
+  background-size: cover;
+  margin-top: 92px;
+  margin-left: -8px;
+  margin-right: -8px;
+  box-shadow: 0px 0px 30px 10px;
+}
+
+body {
+  background-color: #2b2b2b;
+  font-family: 'Futura';
+}
+
+.imgtitle {
+  width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@font-face {
+  font-family: 'Futura';
+  src: url('https://raw.githubusercontent.com/WVCS/index-malekmaaz/main/glacier/Futura-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-family: 'Futura', sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 60px;
+  transform: skew(-15deg, 0deg);
+}
+
+h2 {
+  /* color: #7fe9e2 */
+  color: #ffffff;
+  font-size: 50px;
+  transform: skew(-32deg, 0deg) scale(1.12, 1);
+  letter-spacing: -4px;
+  
+}
+
+
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.div2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.image-container {
+  position: relative;
+  cursor: pointer;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  max-width: 100%; /* Added */
+}
+
+.original-image,
+.hover-image {
+  max-width: 100%; /* Added */
+  height: auto; /* Added */
+  object-fit: cover;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.original-image {
+  z-index: 2;
+}
+
+.hover-image {
+  opacity: 0;
+  z-index: 1;
+  position: absolute;
+}
+
+
+.titleparent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.titlediv1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.titlediv2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.images-container {
+  display: flex; /* Use flexbox to align images */
+  justify-content: center; /* Center images horizontally */
+  align-items: center; /* Center images vertically */
+}
+
+.images {
+  max-width: 100%; /* Set a maximum width for the images */
+  max-height: 200px; /* Set a maximum height for the images */
+  width: auto; /* Maintain the aspect ratio of the images */
+  height: auto; /* Maintain the aspect ratio of the images */
+  display: block; /* Ensure the images are centered horizontally */
+  margin: 0 auto; /* Center the images horizontally */
+}
+
+@media (max-width: 768px) {
+  /* Adjust image size for screens up to 768px width */
+  .images {
+    max-height: 160px; /* Decrease the maximum height of the images */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Adjust image size for screens up to 480px width */
+  .images {
+    max-height: 120px; /* Decrease the maximum height of the images further */
+  }
+}
+
+
+
+
+
+
+
+/* NAV CSS */
+.logo {
+  top: -10px;
+  left: 0px;
+  position: absolute;
+  height: 100px;
+}
+
+.logo {
+  top: -10px;
+  left: 0px;
+  position: absolute;
+  height: 100px;
+}
+
+nav {
+  list-style-type: none;
+  position: fixed;
+  width: 100%;
+  background-color: #000000;
+  left: 0;
+  top: 0;
+  font-family: 'Futura', sans-serif;
+  font-size: 22px;
+  z-index: 999;
+}
+
+li {
+  display: inline;
+  float: right;
+  padding: 30px;
+  transform: skew(-32deg, 0deg) scale(1.12, 1);
+  letter-spacing: -1px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:not(.nohover):hover {
+  background-color: black;
+  opacity: 0.75;
+}
+
+.cart-window {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  display: none;
+  z-index: 1000;
+  opacity: 0;
+  animation: fade-in 0.3s ease-in-out;
+}
+
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #dddddd;
+}
+
+.cart-header h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #000000;
+  transform: skew(-32deg, 0deg) scale(1.12, 1);
+  letter-spacing: -2px;
+}
+
+
+.cart-content {
+  padding: 10px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.cart-item-image {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.cart-item-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-item-details h3 {
+  margin: 0;
+  font-size: 16px;
+  transform: skew(-32deg, 0deg) scale(1.12, 1);
+  letter-spacing: -1px;
+}
+
+.cart-item-details p {
+  margin: 0;
+  font-size: 14px;
+    transform: skew(-32deg, 0deg) scale(1.12, 1);
+  letter-spacing: -1px;
+}
+
+.cart-close-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: none;
+  border: none;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.cart-close-btn:hover {
+  background-color: #cccccc;
+}
+
+
+
+.cart-window.fade-out {
+  animation: fade-out 0.3s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+
+
+.nav2 {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .nav1 {
+    display: none;
+  }
+
+  .nav2 {
+    display: inline;
+  }
+}
+
+
+
+#entireDiv {
+  position: fixed;
+  right: 500px;
+  top: 25px;
+}
+
+input[type="text"] {
+  font-family: 'Futura';
+}
+
+.autocomplete {
+  cursor: pointer;
+  background-color: black;
+  color:white;
+}
+
+
+#myInput {
+  width: 100%;
+}
