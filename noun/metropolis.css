@@ -1,0 +1,306 @@
+html {
+   scroll-behavior: smooth;
+}   
+
+@font-face {
+  font-family: 'Futura';
+  src: url('https://raw.githubusercontent.com/WVCS/index-malekmaaz/main/glacier/Futura-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+input[type="text"] {
+  font-family: 'Futura';
+}
+
+h1 {
+  font-family: 'Futura';
+  color: white;
+  text-align: center;
+  font-size: 60px;
+}
+
+
+h2 {
+  font-family: 'Futura', sans-serif;
+  transform: skew(-35deg, 0deg) scale(1.12, 1); 
+  font-size: 50px;
+  color: white;
+  letter-spacing: -4px;
+} 
+
+.subjects {
+  width: 500px;
+}
+      
+      
+.logo {
+  top: 22px;
+  left: 25px;
+  position: absolute;
+  height: 50px;
+}
+
+nav {
+  list-style-type: none;
+  position: fixed;
+  width: 100%;
+  background-color: #000000;
+  left: 0;
+  top: 0;
+  font-family: 'Futura', sans-serif;
+  font-size: 22px;
+  z-index: 999;
+}
+
+.navli {
+  display: inline;
+  float: right;
+  padding: 30px;
+  transform: skew(-32deg, 0deg) scale(1.12, 1);
+  letter-spacing: -1px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.navli a {
+  transition: opacity 0.2s ease-in-out; /* Add transition property for opacity */
+}
+
+.navli a:hover {
+  background-color: black;
+  opacity: 0.75;
+}
+
+.navli a:active,
+.navli a:focus,
+.navli a:visited {
+  opacity: 1;
+}
+
+.nav1 .logo {
+  transition: opacity 0.2s ease-in-out; /* Add transition property for opacity */
+}
+
+.nav1 .logo:hover {
+  opacity: 0.75;
+}
+
+.nav1 .logo:active,
+.nav1 .logo:focus,
+.nav1 .logo:visited {
+  opacity: 1;
+}
+
+
+.nav2 {
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  .nav1 {
+    display: none;
+  }
+
+  .nav2 {
+    display: inline;
+  }
+}
+
+
+.Top {
+  background-color: #000000;
+  background: url(https://rare-gallery.com/uploads/posts/504763-Light-Japan.jpg)
+    no-repeat center center fixed;
+  background-size: cover;
+  margin-top: 82px;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.images-container {
+  display: flex; /* Use flexbox to align images */
+  justify-content: center; /* Center images horizontally */
+  align-items: center; /* Center images vertically */
+}
+
+.logoimage {
+  max-width: 70%; /* Set a maximum width for the images */
+  max-height: 150px; /* Set a maximum height for the images */
+  width: auto; /* Maintain the aspect ratio of the images */
+  height: auto; /* Maintain the aspect ratio of the images */
+  display: block; /* Ensure the images are centered horizontally */
+  margin: 0 auto; /* Center the images horizontally */
+}
+
+@media (max-width: 768px) {
+  /* Adjust image size for screens up to 768px width */
+  .logoimage {
+    max-height: 120px; /* Decrease the maximum height of the images */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Adjust image size for screens up to 480px width */
+  .logoimage {
+    max-height: 90px; /* Decrease the maximum height of the images further */
+  }
+}
+
+
+body {
+  font-family: "Futura", sans-serif;
+  background-color: #9EFFF7;
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(200, 51, 200, 1));
+}
+
+h2 {
+  color: #000000;  
+  text-transform: uppercase;
+}
+
+ul {list-style-type: square;
+     text-transform: uppercase;
+  line-height:100%}
+
+table, tr, th, td {
+  text-transform: uppercase;
+  border: solid black 0x;
+  border-collapse: collapse;
+}
+
+td {
+  text-align:center
+}
+
+table {
+  width:50%;
+    
+}
+
+th, td {
+  padding: 4%;
+  border-style: none;
+  color: #393D3;
+}
+
+tr {
+  transition: background-color 0.2s ease-in-out; /* Add transition property for background-color */
+}
+
+tr:nth-child(even) {
+  background-color: #FFE4F8;
+}
+
+tr:nth-child(odd) {
+  background-color: #D7FFFC;
+}
+
+tr:nth-child(even):hover {
+  background-color: #fff6fd;
+}
+
+tr:nth-child(odd):hover {
+  background-color: #f2fffe;
+}
+
+
+table, th, td {
+  border: 0px solid white;
+  border-collapse: collapse;
+ 
+}
+
+div.container {
+  text-align: center;
+}
+
+.lists1 {
+  display: inline-block;
+  text-align: left;
+}
+
+.lists2 {
+  display: inline-block;
+  text-align: right;
+  direction: rtl;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+
+#topBtn {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  background-color: transparent;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  display: block;
+  border: none;
+/* filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.75)); */
+}
+
+#topBtn:hover {
+  cursor: pointer;
+}
+
+#topBtn.show {
+  opacity: 1;
+}
+
+
+.buttonimg {
+  width: 6rem;
+  transition: opacity 0.2s ease-in-out; /* Add transition property for opacity */
+  opacity: 1; /* Set initial opacity to 1 */
+}
+
+.buttonimg:hover {
+  opacity: 0.8; /* Set opacity to desired value when hovering */
+}
+
+.parent {
+display: grid;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 1 / 2 / 2 / 3; }
+.div3 { grid-area: 2 / 1 / 3 / 3; }
+.div4 { grid-area: 3 / 1 / 4 / 3; }
+.div5 { grid-area: 4 / 1 / 5 / 2; }
+.div6 { grid-area: 4 / 2 / 5 / 3; }
+
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .parent {
+    display: inline; }
+  
+  .subjects {
+  width: 425px;
+}
+  
+}
+
+
+.metropolisimage {
+  height: 20vw;
+}
+
+
+li, td, th {   font-family: 'Futura', sans-serif;
+  letter-spacing: -1.5px;
+}
