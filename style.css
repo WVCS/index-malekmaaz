@@ -1,59 +1,77 @@
-h1 {
-  text-align: center;
-  color:#464E47;
-  text-decoration: underline;
-  text-decoration-thickness: 3px;
-}
-
-p {
-  text-align: center;
-  color: #77A09D;
-
-}
-
 body {
-  background-color: #F4FFFE;
-  font-family: "Poppins", sans-serif;
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url(https://raw.githubusercontent.com/WVCS/index-malekmaaz/main/city.png)
+      no-repeat center center fixed;
+  background-size: cover;
+  margin-top: 200px;
 }
 
-img { 
-  display: block;
-  margin-left: auto;
-  margin-right: auto;}
-
-p:hover {
-  color: #36625E;
+.logo {
+  top: 22px;
+  left: 25px;
+  position: absolute;
+  height: 50px;
 }
-
-img:hover {
-  border: #77A09D solid 10px;
-  height: 350px;
-  opacity:100%
-}
-
-
 
 nav {
-  list-style-type:none;
+  list-style-type: none;
   position: fixed;
-  width:100%;
-  background-color: #CEF0EC;
+  width: 100%;
   left: 0;
   top: 0;
+  font-family: "Nexa", sans-serif;
+  z-index: 999;
+  font-weight: bold;
 }
 
 li {
   display: inline;
   float: right;
-  padding: 10px
-    
-}
-a {
-  text-decoration: none;
-  color: #393D3F
+  padding: 30px;
+  margin-top: 8.5px;
 }
 
-li:hover {
-  background-color: white;
-  opacity: 50%
+a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  transition: opacity 0.25s ease-in-out; /* Add transition property with ease-in-out timing function */
+}
+
+a:hover {
+  opacity: 0.75; /* Change the opacity value */
+}
+
+.nav2 {
+  display: none;
+}
+
+@media (max-width: 1300px) {
+  .nav1 {
+    display: none;
+  }
+
+  .nav2 {
+    display: inline;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-family: "Eagle Light", sans-serif;
+  font-weight: normal;
+  color: white;
+  font-size: 60px;
+  letter-spacing: 0.3em;
+  text-align: center;
+  text-indent: 0.3em;
+}
+
+h2 {
+  font-family: "Nexa", sans-serif;
+  font-weight: normal;
+  color: white;
 }
