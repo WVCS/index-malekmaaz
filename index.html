@@ -1,40 +1,79 @@
 <html>
+
 <head>
-    <title> Malek Maaz's Website </title>
-  <link rel="icon" type="image/x-icon" href="Icon.png">
+  <title> Malek Maaz </title>
+  <link rel="icon" type="image/x-icon" href="glaciericon.png">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-  </head>
-  <body>
-      
-         <nav>
-             <li> <a href="index.html"> Home </a> </li>
-             <li> <a href="noun/metropolis.html"> Noun </a> </li>
-             <li> <a href="convince/martinet.html"> Convince </a> </li>
-             <li> <a href="food/hotchicken.html"> Food </a> </li>
-             <li> <a href="event/glitchfest.html"> Event </a> </li>
-             <li> <a href="final/final.html"> Final </a> </li>
-             <li> <a href="band/band.html"> Band </a> </li>
-             <li> <a href="amusement/nightscape.html"> Amusement </a> </li>
-             <li> <a href="glacier/glacier.html"> Store </a> </li>
-    </nav>
-    
-    <br>
-    <br>
-   
-  
-<center>
-  
-  <h1> Malek Maaz's Website </h1>
-  <p> Welcome to the website! </p>
-  <img src="Personal Artifact.png" height=300px>
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link href="https://fonts.cdnfonts.com/css/eagle-4" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/nexa" rel="stylesheet">
+</head>
+
+<body>
+  <center>
+    <div class="Welcome">
+      <h1> WELCOME </h1>
+      <h2> This website contains a portfolio of all of my website projects over my Web Design 1-2 term. </h2>
+    </div>
+  </center>
+
 </body>
 
-</html>
+<!--NAV BARS-->
+<nav class=nav1>
+  <a href="index.html">
+    <img src="https://raw.githubusercontent.com/WVCS/index-malekmaaz/main/Arctic Logo.png" class="logo">
+  </a>
+  <li> <a href="#topBtn" onclick="topFunction()" id="topBtn"> Home </a> </li>
+  <li> <a href="noun/metropolis.html"> Noun </a> </li>
+  <li> <a href="convince/martinet.html"> Convince </a> </li>
+  <li> <a href="food/hotchicken.html"> Food </a> </li>
+  <li> <a href="event/glitchfest.html"> Event </a> </li>
+  <li> <a href="final/final.html"> Final </a> </li>
+  <li> <a href="band/band.html"> Band </a> </li>
+  <li> <a href="amusement/nightscape.html"> Amusement </a> </li>
+  <li> <a href="glacier/glacier.html"> Store </a>
+</nav>
 
-<style>
-body {
-  font-family: "Poppins", sans-serif;
+<nav class=nav2>
+  <a href="index.html"><img src=""> </a>
+  <li> <a href="../index.html"> Back to Website</a> </li>
+</nav>
+
+
+<script>
+function topFunction() {
+  $("html, body").animate(
+    {
+      scrollTop: 0 // Scroll to the top of the page
+    },
+    1
+  );
 }
-</style>
+
+$(document).ready(function () {
+  $('a[href^="#"]').on("click", function (event) {
+    var target = $($(this).attr("href"));
+    if (target.length) {
+      event.preventDefault();
+      if ($(this).attr("href") === "#topBtn") {
+        $("html, body").animate(
+          {
+            scrollTop: 0 // Scroll to the top of the page
+          },
+          1
+        );
+      } else {
+        $("html, body").animate(
+          {
+            scrollTop: target.offset().top - 82 // Adjust the offset as needed
+          },
+          1
+        );
+      }
+    }
+  });
+});
+
+    </script>
